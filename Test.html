@@ -1,0 +1,47 @@
+<html>
+<head>
+<title> 留言板</title>
+</head>
+<form name="myform" method="post" action="./handle.php"> 
+
+<table width="220" height="100" border="0" align="left">
+<tr>
+<td>
+
+用户名：
+
+<?php
+echo $_POST['username'].
+?>
+<input type="text" maxLength="15" name="username" size="20">
+</td>
+</tr>
+
+<tr>
+<td>
+
+<tr>
+<td width="212" align="left" valign="middle">
+留言:
+<?php
+echo $_POST['content'];
+?>
+</td>
+</tr>
+
+<tr>
+<td align="center" valign="middle">
+<textarea name="content" rows="10" cols="50">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td align="center" valign="middle">
+<input type="submit" name="show" value="提交">
+</td>
+</tr>
+</table>
+</form>
+</html>
+
